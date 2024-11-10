@@ -5,7 +5,7 @@
     Project Name: Cellular Odyssey
 ---
 
-[link to our site](https://cellularodyssey.jonathanwebworks.com/index.html)
+[link to our site](https://cellodyssey.courses)
 
 [link to our figma](https://www.figma.com/board/zXjQWuwnAqWxDTNLEQG3Ym/CellularOdysseyFlowChart?node-id=0-1&t=nsPSkzKGqP0vKyKH-1)
 
