@@ -7,6 +7,4 @@
 
 [link to our site](https://cellularodyssey.jonathanwebworks.com/index.html)
 
-initial commit
-
 
