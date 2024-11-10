@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FKSDJS</title>
+</head>
+<body>
+    <h1 id="textbox"></h1>
+    <button id="buttonME">click me for boobs</button>
+    <script>
+        let text = document.getElementById('textbox');
+        let button = document.getElementById('buttonME');
+        let url = 'https://trial.jonathanwebworks.com/ChatGPTapi.php'; // Set the URL correctly
+
+        // Function to fetch JSON data with POST request
+        async function fetchJSON(url) {
+            try {
+                const response = await fetch(url, {
+                    method: 'POST', // Set the request method to POST
+                    headers: {
+                        'Content-Type': 'application/json', // Specify the content type
+                    },
+                    body: JSON.stringify({ message: "hello world it's jonathan" }) // Set the body with your message
+                });
+                
+                // Check if the response status is OK (status code 200)
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                
+                // Parse the JSON data
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error("Error fetching JSON:", error);
+            }
+        }
+
+        async function populate() {
+            // Fetch the JSON data
+            let information = await fetchJSON(url); // Pass the URL to the function
+
+            // Check if the information is valid and set the text content
+            if (information) {
+                text.textContent = information.message; // Correct the key name to 'message'
+                console.log(information);
+            } else {
+                text.textContent = "Failed to load message."; // Fallback message
+            }
+        }
+
+        button.addEventListener('click', populate);
+    </script>
+</body>
+</html>

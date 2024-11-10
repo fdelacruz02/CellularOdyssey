@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper Elementary Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .quiz-container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Upper Elementary Quiz</h1>
+<div class="quiz-container">
+    <form action="grading.php" method="POST">
+        <input type="hidden" name="age" value="upper_elementary">
+
+        <div class="question">
+            <label>1. Which organ acts as a pump that circulates blood around your body?</label>
+            <input type="radio" name="q1" value="A"> A) Heart<br>
+            <input type="radio" name="q1" value="B"> B) Lungs<br>
+            <input type="radio" name="q1" value="C"> C) Liver<br>
+            <input type="radio" name="q1" value="D"> D) Stomach<br>
+        </div>
+
+        <div class="question">
+            <label>2. Which organ is responsible for filling cells with oxygen and fuel?</label>
+            <input type="radio" name="q2" value="A"> A) Heart<br>
+            <input type="radio" name="q2" value="B"> B) Liver<br>
+            <input type="radio" name="q2" value="C"> C) Lungs<br>
+            <input type="radio" name="q2" value="D"> D) Kidneys<br>
+        </div>
+
+        <div class="question">
+            <label>3. What is the correct order in which blood cells travel through the body?</label>
+            <input type="radio" name="q3" value="A"> A) Bone Marrow → Heart → Lungs → Heart (Again) → Kidneys → Liver → Brain → Digestive System → Heart (Again)<br>
+            <input type="radio" name="q3" value="B"> B) Heart → Lungs → Bone Marrow → Kidneys → Liver → Brain → Digestive System → Heart (Again)<br>
+            <input type="radio" name="q3" value="C"> C) Bone Marrow → Kidneys → Liver → Lungs → Heart → Digestive System → Brain → Heart (Again)<br>
+            <input type="radio" name="q3" value="D"> D) Heart → Bone Marrow → Lungs → Kidneys → Liver → Heart (Again) → Brain → Digestive System<br>
+        </div>
+
+        <div class="question">
+            <label>4. What is the liver primarily responsible for?</label>
+            <input type="radio" name="q4" value="A"> A) Pumping blood<br>
+            <input type="radio" name="q4" value="B"> B) Filtering waste from blood<br>
+            <input type="radio" name="q4" value="C"> C) Oxygenating blood<br>
+            <input type="radio" name="q4" value="D"> D) Breaking down food for fuel<br>
+        </div>
+
+        <div class="question">
+            <label>5. Where are blood cells formed in the body?</label>
+            <input type="radio" name="q5" value="A"> A) Heart<br>
+            <input type="radio" name="q5" value="B"> B) Liver<br>
+            <input type="radio" name="q5" value="C"> C) Bone marrow<br>
+            <input type="radio" name="q5" value="D"> D) Lungs<br>
+        </div>
+
+        <div class="question">
+            <label>6. True or False: The kidneys do not act as filters; they pollute the blood.</label>
+            <input type="radio" name="q6" value="A"> A) True<br>
+            <input type="radio" name="q6" value="B"> B) False<br>
+        </div>
+
+        <div class="question">
+            <label>7. I am like the control center, and I need oxygen for you to think properly. What am I?</label>
+            <input type="radio" name="q7" value="A"> A) Liver<br>
+            <input type="radio" name="q7" value="B"> B) Lungs<br>
+            <input type="radio" name="q7" value="C"> C) Brain<br>
+            <input type="radio" name="q7" value="D"> D) Heart<br>
+        </div>
+
+        <div class="question">
+            <label>8. I am responsible for breaking down food to fuel your body. What am I?</label>
+            <input type="radio" name="q8" value="A"> A) Kidneys<br>
+            <input type="radio" name="q8" value="B"> B) Stomach<br>
+            <input type="radio" name="q8" value="C"> C) Brain<br>
+            <input type="radio" name="q8" value="D"> D) Lungs<br>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Answers</button>
+    </form>
+</div>
+
+</body>
+</html>

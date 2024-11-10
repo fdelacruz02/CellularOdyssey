@@ -1,0 +1,123 @@
+/* homepageCSS.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Lighter background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#maincont {
+    border: 1px solid #333; /* Darker border */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #F2FEFF; 
+}
+
+#gamecont {
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+#screeng {
+    width: 100%;
+}
+
+#displaycont {
+    background-color: #8f9e2f; /* Warm olive yellow */
+    border: 1px solid #333;
+    margin: 3%;
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+#output {
+    width: 100%;
+    height: 50%;
+    padding: 1.5rem; /* Increased padding for more space */
+    border: 1px solid #ccc;
+    border-radius: 12px; /* Rounder corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: #ffffff; /* Clean white background */
+    font-size: 1.1rem; /* Slightly larger text */
+    color: #333; /* Dark text color for better contrast */
+    resize: none; /* Prevent resizing */
+    will-change: transform;
+}
+
+#teacher {
+    height: 50%;
+}
+
+/* Input and Button Styles */
+
+#input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+#text-input {
+    display: block;
+    width: 100%; /* Use full width within a parent container */
+    max-width: 70%; /* Limits the maximum width to 70% */
+    padding: 10px; /* Padding around the text */
+    font-size: 1.1rem;
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+    border: 1px solid #ddd;
+    border-radius: 12px 0 0 12px;
+    outline: none;
+    background-color: #fafafa;
+    color: #333;
+    resize: none; /* Prevents resizing */
+    overflow-wrap: break-word; /* Breaks long words if needed */
+    word-break: break-all; /* Ensures long words don’t overflow */
+    white-space: normal; /* Allows text to wrap to the next line */
+}
+
+#submit-button {
+    width: 30%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border-radius: 0 12px 12px 0; /* Rounded corners on the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+#submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Focus and Active States for Inputs */
+#text-input:focus, #submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Green focus effect */
+}

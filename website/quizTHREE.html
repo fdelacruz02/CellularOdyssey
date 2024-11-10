@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper Elementary Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .quiz-container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Upper Elementary Quiz</h1>
+<div class="quiz-container">
+    <form action="grading.php" method="POST">
+        <input type="hidden" name="age" value="upper_elementary">
+
+        <div class="question">
+            <label>1. Which organ plays a key role in filtering the blood and removing extra waste that the body doesn’t need?</label>
+            <input type="radio" name="q1" value="A"> A) The Kidneys<br>
+            <input type="radio" name="q1" value="B"> B) The Liver<br>
+            <input type="radio" name="q1" value="C"> C) The Lungs<br>
+            <input type="radio" name="q1" value="D"> D) The Brain<br>
+        </div>
+
+        <div class="question">
+            <label>2. Mia is feeling tired and low on energy. Her doctor explains that her red blood cells aren't carrying enough oxygen to her muscles and organs. Based on what you've learned, where might the problem be happening?</label>
+            <input type="radio" name="q2" value="A"> A) In the Kidneys, where the red blood cells are picking up waste<br>
+            <input type="radio" name="q2" value="B"> B) In the Bone Marrow, where red blood cells are made<br>
+            <input type="radio" name="q2" value="C"> C) In the Liver, where nutrients are processed<br>
+            <input type="radio" name="q2" value="D"> D) In the Heart, where blood is pumped to the body<br>
+        </div>
+
+        <div class="question">
+            <label>3. Which of the following statements best explains why red blood cells are so important for brain function?</label>
+            <input type="radio" name="q3" value="A"> A) They carry oxygen, which the brain needs to think and process information<br>
+            <input type="radio" name="q3" value="B"> B) They help the brain filter out waste products<br>
+            <input type="radio" name="q3" value="C"> C) They are the main source of energy for the brain cells<br>
+            <input type="radio" name="q3" value="D"> D) They transport nutrients from the digestive system directly to the brain<br>
+        </div>
+
+        <div class="question">
+            <label>4. Sarah’s blood pressure is very low, and her doctor explains that her heart isn’t pumping efficiently. As a result, her red blood cells are not being transported properly. Which part of the red blood cell's journey is being affected?</label>
+            <input type="radio" name="q4" value="A"> A) The Bone Marrow, where red blood cells are produced<br>
+            <input type="radio" name="q4" value="B"> B) The Kidneys, where blood is filtered<br>
+            <input type="radio" name="q4" value="C"> C) The Heart, which pumps the blood to the body<br>
+            <input type="radio" name="q4" value="D"> D) The Liver, where toxins are filtered from the blood<br>
+        </div>
+
+        <div class="question">
+            <label>5. Which organ plays a key role in filtering the blood and removing extra waste that the body doesn’t need?</label>
+            <input type="radio" name="q5" value="A"> A) The Kidneys<br>
+            <input type="radio" name="q5" value="B"> B) The Liver<br>
+            <input type="radio" name="q5" value="C"> C) The Lungs<br>
+            <input type="radio" name="q5" value="D"> D) The Brain<br>
+        </div>
+
+        <div class="question">
+            <label>6. Why do red blood cells travel through the liver even though it’s not where they pick up oxygen?</label>
+            <input type="radio" name="q6" value="A"> A) To get a nutrient boost from food digestion<br>
+            <input type="radio" name="q6" value="B"> B) To help process nutrients and filter toxins from the blood<br>
+            <input type="radio" name="q6" value="C"> C) To pick up extra oxygen needed for brain function<br>
+            <input type="radio" name="q6" value="D"> D) To drop off carbon dioxide and waste products<br>
+        </div>
+
+        <div class="question">
+            <label>7. Once red blood cells deliver oxygen to the body, they are no longer carrying oxygen. What do they carry instead as they return to the lungs?</label>
+            <input type="radio" name="q7" value="A"> A) Nutrients from food digestion<br>
+            <input type="radio" name="q7" value="B"> B) Carbon dioxide, a waste product from metabolism<br>
+            <input type="radio" name="q7" value="C"> C) Extra oxygen from the digestive system<br>
+            <input type="radio" name="q7" value="D"> D) Hormones to regulate body functions<br>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+    </form>
+</div>
+
+</body>
+</html>

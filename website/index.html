@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="main">
+        <section id="container1">
+            <h1>Cellular Odyssey</h1>
+            <section id="spinning">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.37/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/lxzgfS0X8VGiO8HQ/scene.splinecode"></spline-viewer>  
+            </section>
+        </section>
+        <section id="container2">
+            <form action="LoginPage.php" method="POST">
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" name="username" required>
+            <p>Select your age group:</p>
+            <section id="radiocontainer">
+                <label>
+                    <input type="radio" name="age_group" value="Early Elementary" required>Early Elementary
+                </label><br>
+                <label>
+                    <input type="radio" name="age_group" value="Upper Elementary" required>Upper Elementary
+                </label><br>
+                <label>
+                    <input type="radio" name="age_group" value="Middle School" required>Middle School
+                </label><br><br>
+            </section>
+            <button type="submit" name='submitbutton' value="pressed">Submit</button>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
