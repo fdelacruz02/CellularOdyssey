@@ -48,7 +48,3 @@ Over these 36 hours, our team has learned to come together and overcome challeng
 * Spline
 * Figma
 * GoDaddy
-
-# Try it our project
-
-[link to our site](https://cellularodyssey.jonathanwebworks.com/index.html)
